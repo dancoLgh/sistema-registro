@@ -3,7 +3,13 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="nav-side-menu">
-                        <div class="brand">Brand Logo</div>
+                        <div class="brand">
+                        	<h3>Bienvenido:<span>
+                        		<?php $vistaUsuario = new MvcController();
+	$vistaUsuario -> vistaUsuarioPanelController(); ?>
+													
+											</span></h3>
+                        </div>
                         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                         <div class="menu-list">
                             <ul id="menu-content" class="menu-content collapse out">

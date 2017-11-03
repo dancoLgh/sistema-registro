@@ -51,6 +51,18 @@ class Datos extends Conexion{
 
 	}
 
+	#VISATA DE USUARIOS PANEL
+	#-------------------------------------
+	public function vistaUsuarioPanelModel($tabla)
+	{
+		$stmt = Conexion::conectar()->prepare(" SELECT nombre_usuario FROM $tabla ");
+		$stmt->execute();
+		 return $stmt -> fetch();
+		 $stmt->close();
+
+
+
+	}
 	#VISATA DE USUARIOS
 	#-------------------------------------
 	public function vistaUsuarioModel($tabla)

@@ -123,6 +123,15 @@ class MvcController{
 					}	
 			}	
 	}
+	#VISTA DE USUARIOS EN EL PANEL
+	#----------------------------------------------------------		
+		public function vistaUsuarioPanelController()
+		{
+			$respuesta=Datos::vistaUsuarioPanelModel("usuario");
+			echo $respuesta["nombre_usuario"];
+
+		}
+
 	#VISTA DE USUARIOS
 	#----------------------------------------------------------		
 
