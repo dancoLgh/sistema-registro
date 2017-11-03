@@ -24,17 +24,24 @@
 								<li>
 										<a href="index.php?action=conductores"><i class="fa fa-lg fa-bus" aria-hidden="true"></i> Conductores</a>
 								</li>
-								<li>
-										<a href="index.php?action=salir"><i class="fa fa-lg fa-sign-out" aria-hidden="true"></i> Salir</a>
-								</li>
+							
 
                                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                                    <a href="#" ><i class=" fa fa-car  "></i><span class="arrow"> Usuario</span> </a>
+                                    <a href="#" ><i class="fa fa-lg fa-cog" aria-hidden="true"></i><span class="arrow"> Configuración</span> </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="new">
-                                    <li><a href="#"><i class="ml-2 fa fa-car"></i><span> hola</span></a>
-                                </li></li>
+	                                <li>	
+	                                	 <a href="index.php?action=usuarios"><span class="ml-5 ">Editar Usuarios <i class="fa fa-lg fa-pencil-square-o" aria-hidden="true"></i></span></a>
+	                                </li>
+	                               
+	                               	<li>	
+	                               		 <a href="index.php"><span class="ml-5 ">Agregar Usuarios <i class="fa fa-lg fa-plus-square-o" aria-hidden="true"></i></span></a>
+	                                </li>
+
                                 </ul>
+                                <li>
+										<a href="index.php?action=salir"><i class="fa fa-lg fa-sign-out" aria-hidden="true"></i> Salir</a>
+								</li>
                             </ul>
                         </div>
                     </div>
