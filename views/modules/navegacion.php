@@ -14,15 +14,26 @@
                         <div class="menu-list">
                             <ul id="menu-content" class="menu-content collapse out">
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                                    </a>
+                                    	<a href="index.php?action=registroConductor"><i class="fa  fa-user-plus" aria-hidden="true"></i> Agregar</a>
                                 </li>
+
+                                <li>
+										<a href="#"><i class="fa fa-lg fa-print" aria-hidden="true"></i> Imprimir</a>
+								</li>
+
+								<li>
+										<a href="index.php?action=conductores"><i class="fa fa-lg fa-bus" aria-hidden="true"></i> Conductores</a>
+								</li>
+								<li>
+										<a href="index.php?action=salir"><i class="fa fa-lg fa-sign-out" aria-hidden="true"></i> Salir</a>
+								</li>
+
                                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                                    <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                                    <a href="#" ><i class=" fa fa-car  "></i><span class="arrow"> Usuario</span> </a>
                                 </li>
                                 <ul class="sub-menu collapse" id="new">
-                                    <li>New New 1</li>
+                                    <li><a href="#"><i class="ml-2 fa fa-car"></i><span> hola</span></a>
+                                </li></li>
                                 </ul>
                             </ul>
                         </div>

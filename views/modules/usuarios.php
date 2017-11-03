@@ -11,8 +11,8 @@
 
 
 ?>
-<div class="container margen-top"">
-    <div class="row color-gris">
+<div class="container margen-top ">
+    <div class="row color-gris mr-auto  ml-auto">
         <div class="col panel panel-primary filterable">
             <div class="panel-heading">
                 <h3 class="panel-title text-center display-4 mt-5 ">Usuarios</h3>
