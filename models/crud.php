@@ -39,7 +39,7 @@ class Datos extends Conexion{
 
 		
 
-		$stmt = Conexion::conectar()->prepare(" SELECT usuario, password FROM $tabla WHERE usuario=:usuario");	
+		$stmt = Conexion::conectar()->prepare(" SELECT nombre_usuario, password FROM $tabla WHERE nombre_usuario=:usuario");	
 
 		
 		$stmt->bindParam(":usuario", $datosModel["usuario"], PDO::PARAM_STR);

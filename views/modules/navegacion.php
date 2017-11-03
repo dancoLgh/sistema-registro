@@ -1,56 +1,26 @@
 
-<nav class="navbar navbar-expand-lg fixed-top" >
-
-		
-		<div class="container">
-
-				<a href="index.php?action=usuarios" class="navbar-brand">Sistema de Registro</a>
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			
-			<div class="collapse navbar-collapse container-fluid " id="navbar">
-
-				<ul class="navbar-nav ml-auto">
-
-					<li class="nav-item">
-						<a href="index.php?action=registroConductor" class="nav-link">Agregar <i class="fa fa-lg fa-user-plus" aria-hidden="true"></i></a>
-					</li>
-
-					<li class="nav-item">
-						<a href="#" class="nav-link">Imprimir <i class="fa fa-lg fa-print" aria-hidden="true"></i></i></a>
-					</li>
-						
-
-					<li class="nav-item">
-						<a href="index.php?action=conductores" class="nav-link">conductores <i class="fa fa-lg fa-bus" aria-hidden="true"></i></i></a>
-					</li>
-						
-
-					<li class="nav-item">
-						<a href="index.php?action=ingresar" class="nav-link">Ingresar <i class="fa fa-lg fa-sign-in" aria-hidden="true"></i></a>
-					</li>
-
-					<li class="nav-item">
-						<a href="index.php?action=salir" class="nav-link">Salir <i class="fa fa-lg fa-sign-out" aria-hidden="true"></i></a>
-					</li>
-					<li class="nav-item">
-
-							<div class="btn-group" role="group">
-						  
-						    	<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-lg fa-cog" aria-hidden="true"></i><a>
-						      
-						   
-						    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-						      <a class="dropdown-item" href="index.php?action=usuarios">Editar Usuarios <i class="fa fa-lg fa-pencil-square-o" aria-hidden="true"></i></a>
-						      <a class="dropdown-item" href="index.php">Agregar Usuario <i class="fa fa-lg fa-plus-square-o" aria-hidden="true"></i></a>
-						    </div>
-						  </div>
-					</li>
-
-				</ul>
-		
-			</div>
-		</div>
-	</nav>
+<div  class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="nav-side-menu">
+                        <div class="brand">Brand Logo</div>
+                        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                        <div class="menu-list">
+                            <ul id="menu-content" class="menu-content collapse out">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                    </a>
+                                </li>
+                                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                                    <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                                </li>
+                                <ul class="sub-menu collapse" id="new">
+                                    <li>New New 1</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-sm-offset-1">
+                   

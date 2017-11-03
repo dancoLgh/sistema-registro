@@ -5,9 +5,14 @@ class Paginas{
 	public function enlacesPaginasModel($enlaces){
 
 
-		if($enlaces == "ingresar" || $enlaces == "usuarios" ||  $enlaces == "conductores" ||  $enlaces == "editar" || $enlaces == "registroConductor" || $enlaces == "salir"){
+		if($enlaces == "usuarios" ||  $enlaces == "conductores" ||  $enlaces == "editar" || $enlaces == "registroConductor" || $enlaces == "salir"){
 
 			$module =  "views/modules/".$enlaces.".php";
+		
+		}
+			else if($enlaces == "ingresar"){
+
+			$module =  "views/ingresar.php";
 		
 		}
 
@@ -29,7 +34,7 @@ class Paginas{
 		}
 		else if($enlaces == "fallo"){
 
-			$module =  "views/modules/ingresar.php";
+			$module =  "views/ingresar.php";
 		
 		}
 		else if($enlaces == "actulizacion_correcta"){

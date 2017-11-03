@@ -15,19 +15,27 @@
 </head>
 <style type="text/css">
 	
-body{
-
-
-	 background: url('views/modules/img/fondo.jpg') no-repeat;
-	background-size:100% 100%;
- 		
-}
-
 
 </style>
 <body>
+	<?php 
+	if(isset($_GET["action"]))
+	{
+		if($_GET["action"]=="ingresar"||$_GET["action"]=="fallo")
+		{
+				
+		}
 
-	<?php include "modules/navegacion.php"; ?>
+		else
+		{
+			include "modules/navegacion.php"; 
+		}
+	}
+
+	
+
+
+	?>
 
 
 	<section>

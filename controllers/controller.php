@@ -89,16 +89,16 @@ class MvcController{
 				if(preg_match('/^[a-zA-Z0-9]+$/', $_POST["usuarioIngreso"])&&
 				   preg_match('/^[a-zA-Z0-9]+$/', $_POST["passwordIngreso"]))
 				{	
-					$encriptar = crypt($_POST["passwordIngreso"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
+					
 
 					$datosController = array("usuario" =>$_POST["usuarioIngreso"],
-											 "password"=>$encriptar);							
+											 "password"=>$_POST["passwordIngreso"]);							
 					
 					$respuesta = Datos::ingresoUsuarioModel($datosController, "usuario");
 					
 					
 
-					if ($respuesta["usuario"] == $_POST["usuarioIngreso"] && $respuesta["password"] == $encriptar)
+					if ($respuesta["nombre_usuario"] == $_POST["usuarioIngreso"] && $respuesta["password"] == $_POST["passwordIngreso"])
 					{
 							session_start();
 
