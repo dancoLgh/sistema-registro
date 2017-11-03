@@ -18,8 +18,8 @@
 body{
 
 
-	 background: url('views/modules/img/fondo.jpg') no-repeat;
-	background-size:100% 100%;
+	 background: url('views/modules/img/fondo.jpg');
+	
  		
 }
 
